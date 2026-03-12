@@ -1,0 +1,13 @@
+D:\ASP_NET_WORKSPACE\QLSV\QLSV\obj\Debug\QLSV.csproj.AssemblyReference.cache
+D:\ASP_NET_WORKSPACE\QLSV\QLSV\obj\Debug\QLSV.FrmLogin.resources
+D:\ASP_NET_WORKSPACE\QLSV\QLSV\obj\Debug\QLSV.Properties.Resources.resources
+D:\ASP_NET_WORKSPACE\QLSV\QLSV\obj\Debug\QLSV.csproj.GenerateResource.cache
+D:\ASP_NET_WORKSPACE\QLSV\QLSV\obj\Debug\QLSV.csproj.CoreCompileInputs.cache
+D:\ASP_NET_WORKSPACE\QLSV\QLSV\obj\Debug\QLSV.FrmLopHoc.resources
+D:\ASP_NET_WORKSPACE\QLSV\QLSV\obj\Debug\QLSV.FrmSinhVien.resources
+D:\ASP_NET_WORKSPACE\QLSV\QLSV\bin\Debug\QLSV.exe.config
+D:\ASP_NET_WORKSPACE\QLSV\QLSV\bin\Debug\QLSV.exe
+D:\ASP_NET_WORKSPACE\QLSV\QLSV\bin\Debug\QLSV.pdb
+D:\ASP_NET_WORKSPACE\QLSV\QLSV\obj\Debug\QLSV.exe
+D:\ASP_NET_WORKSPACE\QLSV\QLSV\obj\Debug\QLSV.pdb
+D:\ASP_NET_WORKSPACE\QLSV\QLSV\obj\Debug\QLSV.exe.config
