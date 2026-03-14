@@ -21,16 +21,31 @@ namespace QLSV
 
         private void LoadData()
         {
-            dgvLopHoc.DataSource = db.LopHocs.Select(l => new { l.MaLop, l.TenLop }).ToList();
+            dgvLopHoc.DataSource = db.LopHocs.Select(l => new { l.MaLop, l.TenLop, l.Khoa }).ToList();
         }
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            LopHoc lopMoi = new LopHoc { TenLop = txtTenLop.Text };
+            LopHoc lopMoi = new LopHoc
+            {
+                TenLop = txtTenLop.Text,
+                Khoa = txtKhoa.Text
+            };
             db.LopHocs.InsertOnSubmit(lopMoi);
             db.SubmitChanges();
             LoadData();
             txtTenLop.Clear();
+            txtKhoa.Clear();
+        }
+
+        private void dgvLopHoc_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                idLopHocDangChon = Convert.ToInt32(dgvLopHoc.Rows[e.RowIndex].Cells["MaLop"].Value);
+                txtTenLop.Text = dgvLopHoc.Rows[e.RowIndex].Cells["TenLop"].Value.ToString();
+                txtKhoa.Text = dgvLopHoc.Rows[e.RowIndex].Cells["Khoa"].Value.ToString();
+            }
         }
 
         private void btnSua_Click(object sender, EventArgs e)
@@ -39,6 +54,7 @@ namespace QLSV
             if (lop != null)
             {
                 lop.TenLop = txtTenLop.Text;
+                lop.Khoa = txtKhoa.Text;
                 db.SubmitChanges();
                 LoadData();
             }
@@ -53,6 +69,7 @@ namespace QLSV
                 db.SubmitChanges();
                 LoadData();
                 txtTenLop.Clear();
+                txtKhoa.Clear();
             }
         }
 
@@ -60,6 +77,28 @@ namespace QLSV
         {
             FrmSinhVien fSinhVien = new FrmSinhVien();
             fSinhVien.ShowDialog();
+        }
+
+        private void btnLamMoi_Click(object sender, EventArgs e)
+        {
+            txtTenLop.Clear();
+            txtKhoa.Clear();
+            idLopHocDangChon = -1;
+            dgvLopHoc.ClearSelection();
+            txtTenLop.Focus();
+
+            LoadData();
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            string tuKhoa = txtTimKiem.Text.Trim().ToLower();
+
+            var ketQua = db.LopHocs.Where(l => l.TenLop.ToLower().Contains(tuKhoa) ||
+                                               l.Khoa.ToLower().Contains(tuKhoa))
+                                   .Select(l => new { l.MaLop, l.TenLop, l.Khoa }).ToList();
+
+            dgvLopHoc.DataSource = ketQua;
         }
     }
 }

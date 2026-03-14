@@ -106,6 +106,8 @@ namespace QLSV
 		
 		private string _TenLop;
 		
+		private string _Khoa;
+		
 		private EntitySet<SinhVien> _SinhViens;
 		
     #region Extensibility Method Definitions
@@ -116,6 +118,8 @@ namespace QLSV
     partial void OnMaLopChanged();
     partial void OnTenLopChanging(string value);
     partial void OnTenLopChanged();
+    partial void OnKhoaChanging(string value);
+    partial void OnKhoaChanged();
     #endregion
 		
 		public LopHoc()
@@ -160,6 +164,26 @@ namespace QLSV
 					this._TenLop = value;
 					this.SendPropertyChanged("TenLop");
 					this.OnTenLopChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Khoa", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
+		public string Khoa
+		{
+			get
+			{
+				return this._Khoa;
+			}
+			set
+			{
+				if ((this._Khoa != value))
+				{
+					this.OnKhoaChanging(value);
+					this.SendPropertyChanging();
+					this._Khoa = value;
+					this.SendPropertyChanged("Khoa");
+					this.OnKhoaChanged();
 				}
 			}
 		}
@@ -306,6 +330,10 @@ namespace QLSV
 		
 		private string _TenSV;
 		
+		private System.Nullable<System.DateTime> _NgaySinh;
+		
+		private string _GioiTinh;
+		
 		private System.Nullable<int> _MaLop;
 		
 		private EntityRef<LopHoc> _LopHoc;
@@ -318,6 +346,10 @@ namespace QLSV
     partial void OnMaSVChanged();
     partial void OnTenSVChanging(string value);
     partial void OnTenSVChanged();
+    partial void OnNgaySinhChanging(System.Nullable<System.DateTime> value);
+    partial void OnNgaySinhChanged();
+    partial void OnGioiTinhChanging(string value);
+    partial void OnGioiTinhChanged();
     partial void OnMaLopChanging(System.Nullable<int> value);
     partial void OnMaLopChanged();
     #endregion
@@ -364,6 +396,46 @@ namespace QLSV
 					this._TenSV = value;
 					this.SendPropertyChanged("TenSV");
 					this.OnTenSVChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgaySinh", DbType="Date")]
+		public System.Nullable<System.DateTime> NgaySinh
+		{
+			get
+			{
+				return this._NgaySinh;
+			}
+			set
+			{
+				if ((this._NgaySinh != value))
+				{
+					this.OnNgaySinhChanging(value);
+					this.SendPropertyChanging();
+					this._NgaySinh = value;
+					this.SendPropertyChanged("NgaySinh");
+					this.OnNgaySinhChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GioiTinh", DbType="NVarChar(10)")]
+		public string GioiTinh
+		{
+			get
+			{
+				return this._GioiTinh;
+			}
+			set
+			{
+				if ((this._GioiTinh != value))
+				{
+					this.OnGioiTinhChanging(value);
+					this.SendPropertyChanging();
+					this._GioiTinh = value;
+					this.SendPropertyChanged("GioiTinh");
+					this.OnGioiTinhChanged();
 				}
 			}
 		}
