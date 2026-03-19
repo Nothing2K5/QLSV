@@ -76,7 +76,9 @@ namespace QLSV
         private void btnChuyenFormSV_Click(object sender, EventArgs e)
         {
             FrmSinhVien fSinhVien = new FrmSinhVien();
+            this.Hide();
             fSinhVien.ShowDialog();
+            this.Close();
         }
 
         private void btnLamMoi_Click(object sender, EventArgs e)

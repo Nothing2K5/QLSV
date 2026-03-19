@@ -108,7 +108,9 @@ namespace QLSV
         private void btnChuyenFormLH_Click(object sender, EventArgs e)
         {
             FrmLopHoc frmLopHoc = new FrmLopHoc();
+            this.Hide();
             frmLopHoc.ShowDialog();
+            this.Close();
         }
 
         private void btnLamMoi_Click(object sender, EventArgs e)

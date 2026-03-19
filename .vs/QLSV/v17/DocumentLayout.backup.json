@@ -7,15 +7,27 @@
       "RelativeMoniker": "D:0:0:{79F58532-714B-4C89-9EA2-6CD92ECDAF28}|QLSV\\QLSV.csproj|solutionrelative:qlsv\\frmsinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79F58532-714B-4C89-9EA2-6CD92ECDAF28}|QLSV\\QLSV.csproj|D:\\ASP_NET_WORKSPACE\\QLSV\\qlsv\\frmsinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{79F58532-714B-4C89-9EA2-6CD92ECDAF28}|QLSV\\QLSV.csproj|solutionrelative:qlsv\\frmsinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79F58532-714B-4C89-9EA2-6CD92ECDAF28}|QLSV\\QLSV.csproj|D:\\ASP_NET_WORKSPACE\\QLSV\\qlsv\\frmlophoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{79F58532-714B-4C89-9EA2-6CD92ECDAF28}|QLSV\\QLSV.csproj|d:\\asp_net_workspace\\qlsv\\qlsv\\frmlophoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{79F58532-714B-4C89-9EA2-6CD92ECDAF28}|QLSV\\QLSV.csproj|solutionrelative:qlsv\\frmlophoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79F58532-714B-4C89-9EA2-6CD92ECDAF28}|QLSV\\QLSV.csproj|D:\\ASP_NET_WORKSPACE\\QLSV\\qlsv\\frmlophoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{79F58532-714B-4C89-9EA2-6CD92ECDAF28}|QLSV\\QLSV.csproj|d:\\asp_net_workspace\\qlsv\\qlsv\\frmsinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{79F58532-714B-4C89-9EA2-6CD92ECDAF28}|QLSV\\QLSV.csproj|solutionrelative:qlsv\\frmsinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79F58532-714B-4C89-9EA2-6CD92ECDAF28}|QLSV\\QLSV.csproj|d:\\asp_net_workspace\\qlsv\\qlsv\\frmlogin.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{79F58532-714B-4C89-9EA2-6CD92ECDAF28}|QLSV\\QLSV.csproj|solutionrelative:qlsv\\frmlogin.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79F58532-714B-4C89-9EA2-6CD92ECDAF28}|QLSV\\QLSV.csproj|d:\\asp_net_workspace\\qlsv\\qlsv\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{79F58532-714B-4C89-9EA2-6CD92ECDAF28}|QLSV\\QLSV.csproj|solutionrelative:qlsv\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79F58532-714B-4C89-9EA2-6CD92ECDAF28}|QLSV\\QLSV.csproj|d:\\asp_net_workspace\\qlsv\\qlsv\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79F58532-714B-4C89-9EA2-6CD92ECDAF28}|QLSV\\QLSV.csproj|solutionrelative:qlsv\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79F58532-714B-4C89-9EA2-6CD92ECDAF28}|QLSV\\QLSV.csproj|d:\\asp_net_workspace\\qlsv\\qlsv\\frmlophoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{79F58532-714B-4C89-9EA2-6CD92ECDAF28}|QLSV\\QLSV.csproj|solutionrelative:qlsv\\frmlophoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -26,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 303,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,52 +50,89 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FrmSinhVien.cs",
-              "DocumentMoniker": "D:\\ASP_NET_WORKSPACE\\QLSV\\QLSV\\FrmSinhVien.cs",
-              "RelativeDocumentMoniker": "QLSV\\FrmSinhVien.cs",
-              "ToolTip": "D:\\ASP_NET_WORKSPACE\\QLSV\\QLSV\\FrmSinhVien.cs",
-              "RelativeToolTip": "QLSV\\FrmSinhVien.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAAAGcAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T10:44:32.337Z",
+              "DocumentIndex": 3,
+              "Title": "FrmLogin.resx",
+              "DocumentMoniker": "D:\\ASP_NET_WORKSPACE\\QLSV\\QLSV\\FrmLogin.resx",
+              "RelativeDocumentMoniker": "QLSV\\FrmLogin.resx",
+              "ToolTip": "D:\\ASP_NET_WORKSPACE\\QLSV\\QLSV\\FrmLogin.resx",
+              "RelativeToolTip": "QLSV\\FrmLogin.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-03-19T23:50:05.56Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FrmLopHoc.cs",
-              "DocumentMoniker": "D:\\ASP_NET_WORKSPACE\\QLSV\\QLSV\\FrmLopHoc.cs",
-              "RelativeDocumentMoniker": "QLSV\\FrmLopHoc.cs",
-              "ToolTip": "D:\\ASP_NET_WORKSPACE\\QLSV\\QLSV\\FrmLopHoc.cs",
-              "RelativeToolTip": "QLSV\\FrmLopHoc.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAwwEcAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T10:36:20.567Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "FrmSinhVien.cs [Design]",
               "DocumentMoniker": "D:\\ASP_NET_WORKSPACE\\QLSV\\QLSV\\FrmSinhVien.cs",
               "RelativeDocumentMoniker": "QLSV\\FrmSinhVien.cs",
               "ToolTip": "D:\\ASP_NET_WORKSPACE\\QLSV\\QLSV\\FrmSinhVien.cs [Design]",
               "RelativeToolTip": "QLSV\\FrmSinhVien.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T10:33:09.37Z",
+              "WhenOpened": "2026-03-19T23:47:39.361Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "FrmSinhVien.cs",
+              "DocumentMoniker": "D:\\ASP_NET_WORKSPACE\\QLSV\\QLSV\\FrmSinhVien.cs",
+              "RelativeDocumentMoniker": "QLSV\\FrmSinhVien.cs",
+              "ToolTip": "D:\\ASP_NET_WORKSPACE\\QLSV\\QLSV\\FrmSinhVien.cs",
+              "RelativeToolTip": "QLSV\\FrmSinhVien.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAAAG4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T23:47:41.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmLopHoc.cs",
+              "DocumentMoniker": "D:\\ASP_NET_WORKSPACE\\QLSV\\QLSV\\FrmLopHoc.cs",
+              "RelativeDocumentMoniker": "QLSV\\FrmLopHoc.cs",
+              "ToolTip": "D:\\ASP_NET_WORKSPACE\\QLSV\\QLSV\\FrmLopHoc.cs",
+              "RelativeToolTip": "QLSV\\FrmLopHoc.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAE4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T23:46:54.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FrmLogin.cs [Design]",
+              "DocumentMoniker": "D:\\ASP_NET_WORKSPACE\\QLSV\\QLSV\\FrmLogin.cs",
+              "RelativeDocumentMoniker": "QLSV\\FrmLogin.cs",
+              "ToolTip": "D:\\ASP_NET_WORKSPACE\\QLSV\\QLSV\\FrmLogin.cs [Design]",
+              "RelativeToolTip": "QLSV\\FrmLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T23:45:05.773Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FrmLogin.cs",
+              "DocumentMoniker": "D:\\ASP_NET_WORKSPACE\\QLSV\\QLSV\\FrmLogin.cs",
+              "RelativeDocumentMoniker": "QLSV\\FrmLogin.cs",
+              "ToolTip": "D:\\ASP_NET_WORKSPACE\\QLSV\\QLSV\\FrmLogin.cs",
+              "RelativeToolTip": "QLSV\\FrmLogin.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwB0AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T23:50:10.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "FrmLopHoc.cs [Design]",
               "DocumentMoniker": "D:\\ASP_NET_WORKSPACE\\QLSV\\QLSV\\FrmLopHoc.cs",
               "RelativeDocumentMoniker": "QLSV\\FrmLopHoc.cs",
               "ToolTip": "D:\\ASP_NET_WORKSPACE\\QLSV\\QLSV\\FrmLopHoc.cs [Design]",
               "RelativeToolTip": "QLSV\\FrmLopHoc.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T10:32:46.629Z",
+              "WhenOpened": "2026-03-19T23:46:52.445Z",
               "EditorCaption": " [Design]"
             }
           ]

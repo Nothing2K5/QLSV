@@ -1,30 +1,76 @@
-﻿CREATE DATABASE QLSV;
-GO
-USE QLSV;
+CREATE DATABASE [QLSV]
 GO
 
--- Bảng Người dùng 
-CREATE TABLE Users (
-    Username VARCHAR(50) PRIMARY KEY,
-    Password VARCHAR(50) NOT NULL
-);
-
--- Bảng Lớp học
-CREATE TABLE LopHoc (
-    MaLop INT PRIMARY KEY IDENTITY(1,1),
-    TenLop NVARCHAR(100) NOT NULL,
-	Khoa NVARCHAR(100) NOT NULL
-);
-
--- Bảng Sinh viên
-CREATE TABLE SinhVien (
-    MaSV INT PRIMARY KEY IDENTITY(1,1),
-    TenSV NVARCHAR(100) NOT NULL,
-	NgaySinh DATE,
-	GioiTinh NVARCHAR(10),
-	MaLop INT,
-    FOREIGN KEY (MaLop) REFERENCES LopHoc(MaLop)
-);
-
--- Thêm tài khoản admin mặc định
-INSERT INTO Users (Username, Password) VALUES ('hanh', '0009468');
+USE [QLSV]
+GO
+/****** Object:  Table [dbo].[LopHoc]    Script Date: 3/20/2026 6:54:03 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[LopHoc](
+	[MaLop] [int] IDENTITY(1,1) NOT NULL,
+	[TenLop] [nvarchar](100) NOT NULL,
+	[Khoa] [nvarchar](100) NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[MaLop] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[SinhVien]    Script Date: 3/20/2026 6:54:03 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[SinhVien](
+	[MaSV] [int] IDENTITY(1,1) NOT NULL,
+	[TenSV] [nvarchar](100) NOT NULL,
+	[NgaySinh] [date] NULL,
+	[GioiTinh] [nvarchar](10) NULL,
+	[MaLop] [int] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[MaSV] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Users]    Script Date: 3/20/2026 6:54:03 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Users](
+	[Username] [varchar](50) NOT NULL,
+	[Password] [varchar](50) NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Username] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET IDENTITY_INSERT [dbo].[LopHoc] ON 
+GO
+INSERT [dbo].[LopHoc] ([MaLop], [TenLop], [Khoa]) VALUES (1, N'68PM3', N'CNTT')
+GO
+INSERT [dbo].[LopHoc] ([MaLop], [TenLop], [Khoa]) VALUES (2, N'68PM4', N'CNTT')
+GO
+INSERT [dbo].[LopHoc] ([MaLop], [TenLop], [Khoa]) VALUES (3, N'68MHT1', N'CNTT')
+GO
+SET IDENTITY_INSERT [dbo].[LopHoc] OFF
+GO
+SET IDENTITY_INSERT [dbo].[SinhVien] ON 
+GO
+INSERT [dbo].[SinhVien] ([MaSV], [TenSV], [NgaySinh], [GioiTinh], [MaLop]) VALUES (1, N'Nguyen Hoang Ha', CAST(N'2005-11-26' AS Date), N'Nam', 1)
+GO
+SET IDENTITY_INSERT [dbo].[SinhVien] OFF
+GO
+INSERT [dbo].[Users] ([Username], [Password]) VALUES (N'hanh', N'0009468')
+GO
+ALTER TABLE [dbo].[SinhVien]  WITH CHECK ADD FOREIGN KEY([MaLop])
+REFERENCES [dbo].[LopHoc] ([MaLop])
+GO
+USE [master]
+GO
+ALTER DATABASE [QLSV] SET  READ_WRITE 
+GO
